@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+img {
+  height: auto;
+}
+input,
+button {
+  background: none;
+  border: none;
+}
+input {
+  width: 100%;
+}
+button {
+  cursor: pointer;
+}
+sub {
+  vertical-align: baseline;
+}
+sup {
+  vertical-align: top;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  background-color: #161616;
+  color: #eeeeee;
+  font-size: 1.6rem;
+}
+:focus-visible {
+  outline: 1px solid #eeeeee;
+  outline-offset: 2px;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
