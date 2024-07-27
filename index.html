@@ -13,8 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
       rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
@@ -24,6 +29,65 @@
     <title>WDA Weather</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo"> WDA Weather </a>
+
+        <div class="search-view" data-search-view>
+          <div class="search-wrapper">
+            <input
+              class="search-field"
+              type="search"
+              name="search"
+              placeholder="Search location..."
+              autocomplete="off"
+              data-search-field
+            />
+
+            <span class="m-icon">search</span>
+
+            <button
+              class="icon-btn leading-icon has-state"
+              aria-label="close search"
+              data-search-toggler
+            >
+              <span class="m-icon">arrow_back</span>
+            </button>
+          </div>
+
+          <div class="search-result" data-search-result>
+            <ul class="view-list" data-search-list>
+              <li class="view-item">
+                <span class="m-icon">location_on</span>
+                <div>
+                  <p class="item-title">Bangladesh</p>
+                  <p class="label-2 item-subtitle">Asia</p>
+                </div>
+
+                <a href="#" class="item-link has-state" data-search-toggler></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header-action">
+          <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+            <span class="m-icon icon">search</span>
+          </button>
+
+          <a
+            href="#/current-location"
+            class="btn-primary has-state"
+            data-current-location-btn
+            disabled
+          >
+            <span class="m-icon">my_location</span>
+            <span class="span">Current Location</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
     <!-- JavaScript -->
     <script type="module" src="/javascript/index.js"></script>
     <script type="module" src="/javascript/routes.js"></script>
