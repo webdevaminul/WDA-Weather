@@ -510,6 +510,7 @@ article.container::before {
   background-color: var(--gradient-1);
   position: fixed;
   bottom: 0;
+  left: 0;
   pointer-events: none;
   z-index: 1;
 }
@@ -680,9 +681,45 @@ article.container::before {
 }
 
 /*-----------------------------------*\
-  #FORECAST
+  #HOURLY FORECAST
 \*-----------------------------------*/
+.slider-container {
+  overflow-x: auto;
+  margin-inline: -16px;
+}
 
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-list {
+  display: flex;
+  gap: 12px;
+}
+
+.slider-list:first-child {
+  margin-block-end: 16px;
+}
+
+.slider-list::before,
+.slider-list::after {
+  content: "";
+  min-width: 4px;
+}
+
+.slider-item {
+  min-width: 110px;
+  flex: 1 1 100%;
+}
+
+.slider-card {
+  text-align: center;
+}
+
+.slider-card .weather-icon {
+  margin-inline: auto;
+  margin-block: 12px;
+}
 /*-----------------------------------*\
   #LOADING
 \*-----------------------------------*/
