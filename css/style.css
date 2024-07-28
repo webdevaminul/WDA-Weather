@@ -720,16 +720,36 @@ article.container::before {
   margin-inline: auto;
   margin-block: 12px;
 }
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+.footer,
+.footer .body-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: none;
+}
+
+.footer {
+  color: var(--on-surface-variant);
+  text-align: center;
+  margin-block-start: 28px;
+}
+
+.fade-in .footer {
+  display: flex;
+}
+
 /*-----------------------------------*\
   #LOADING
 \*-----------------------------------*/
 
 /*-----------------------------------*\
   #ERROR SECTION
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #FOOTER
 \*-----------------------------------*/
 
 /*-----------------------------------*\
