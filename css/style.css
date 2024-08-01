@@ -1003,7 +1003,7 @@ article.container::before {
 
   .search-view .view-list {
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
     width: 100%;
     max-height: 360px;
@@ -1037,7 +1037,7 @@ article.container::before {
   }
 
   article.container {
-    grid-template-columns: 360px minmax(0 1fr);
+    grid-template-columns: 360px minmax(0, 1fr);
     gap: 40px;
   }
 
@@ -1063,5 +1063,12 @@ article.container::before {
 
   .slider-list {
     gap: 16px;
+  }
+}
+
+/* Larger Than 1400px */
+@media (min-width: 1400px) {
+  .highlight-list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
